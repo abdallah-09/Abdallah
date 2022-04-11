@@ -1,0 +1,51 @@
+using System;
+
+public class calc
+{
+    public static void Main(string[] args)
+    {
+        int num1,num2,sign ;
+float result;
+
+label:
+
+Console.WriteLine("\n\t meneu" );
+Console.WriteLine("for add press 1");
+Console.WriteLine("for sub. press 2");
+Console.WriteLine("for divi. press 3");
+Console.WriteLine("for multi. press 4");
+
+Console.Write("\n what is the first number ?       ");
+num1=Convert.ToInt32(Console.ReadLine());
+Console.Write("\n what is the second number ?      ");
+num2=Convert.ToInt32(Console.ReadLine());
+Console.Write("\n what is the opperation ?         ");
+sign=Convert.ToInt32(Console.ReadLine());
+
+if (sign==1)
+{
+    result=num1+num2;
+    Console.WriteLine("\n{0}+{1}={2}",num1,num2,result);
+} else if  (sign==2)
+{
+    result=num1-num2;
+    Console.WriteLine("\n{0}-{1}={2}",num1,num2,result);
+} else if  (sign==3)
+{
+    result=(float)(num1/num2);
+    Console.WriteLine("\n{0}/{1}={2}",num1,num2,result);
+} else if  (sign==4)
+ {   
+     result=num1*num2;
+    Console.WriteLine("\n{0}*{1}={2}",num1,num2,result);
+ } else 
+ {
+    Console.WriteLine("\n\n\t error ... please try agin"); 
+    goto label;
+ }
+
+Console.Read();
+
+     
+    }
+}
