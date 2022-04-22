@@ -2,46 +2,46 @@ using System;
 
 public class calc
 {
-    public static void Main(string[] args)
+    public static void Main(string[] args) // main method
     {
-        int num1,num2,sign ;
+        int num1,num2,sign ; //creating variables
 float result;
 
-label:
+label: //creating loop
 
-Console.WriteLine("\n\t meneu" );
-Console.WriteLine("for add press 1");
-Console.WriteLine("for sub. press 2");
-Console.WriteLine("for divi. press 3");
-Console.WriteLine("for multi. press 4");
+Console.WriteLine("\n\t meneu" ); //output massage
+Console.WriteLine("for add press 1");//output massage
+Console.WriteLine("for sub. press 2");//output massage
+Console.WriteLine("for divi. press 3");//output massage
+Console.WriteLine("for multi. press 4");//output massage
 
-Console.Write("\n what is the first number ?       ");
-num1=Convert.ToInt32(Console.ReadLine());
-Console.Write("\n what is the second number ?      ");
-num2=Convert.ToInt32(Console.ReadLine());
-Console.Write("\n what is the opperation ?         ");
-sign=Convert.ToInt32(Console.ReadLine());
+Console.Write("\n what is the first number ?       "); // take input from the user
+num1=Convert.ToInt32(Console.ReadLine()); // save the input in variable
+Console.Write("\n what is the second number ?      ");// take input from the user
+num2=Convert.ToInt32(Console.ReadLine()); // save the input in variable
+Console.Write("\n what is the opperation ?         ");// take input from the user
+sign=Convert.ToInt32(Console.ReadLine()); // save the input in variable
 
-if (sign==1)
+if (sign==1) // if condition
 {
-    result=num1+num2;
-    Console.WriteLine("\n{0}+{1}={2}",num1,num2,result);
+    result=num1+num2; // mathematical operation
+    Console.WriteLine("\n{0}+{1}={2}",num1,num2,result);//output massage
 } else if  (sign==2)
 {
-    result=num1-num2;
-    Console.WriteLine("\n{0}-{1}={2}",num1,num2,result);
+    result=num1-num2; // mathematical operation
+    Console.WriteLine("\n{0}-{1}={2}",num1,num2,result);//output massage
 } else if  (sign==3)
 {
-    result=(float)(num1/num2);
-    Console.WriteLine("\n{0}/{1}={2}",num1,num2,result);
+    result=(float)(num1/num2); // mathematical operation
+    Console.WriteLine("\n{0}/{1}={2}",num1,num2,result);//output massage
 } else if  (sign==4)
  {   
-     result=num1*num2;
-    Console.WriteLine("\n{0}*{1}={2}",num1,num2,result);
+     result=num1*num2; // mathematical operation
+    Console.WriteLine("\n{0}*{1}={2}",num1,num2,result);//output massage
  } else 
  {
-    Console.WriteLine("\n\n\t error ... please try agin"); 
-    goto label;
+    Console.WriteLine("\n\n\t error ... please try agin"); //output massage
+    goto label; // back to the loop to try again
  }
 
 Console.Read();
